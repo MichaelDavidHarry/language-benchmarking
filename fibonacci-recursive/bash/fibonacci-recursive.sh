@@ -2,7 +2,6 @@
 
 function get_fib()
 {
-    local result=""
     if [ "$1" -eq 1 ]
     then
         echo 0
