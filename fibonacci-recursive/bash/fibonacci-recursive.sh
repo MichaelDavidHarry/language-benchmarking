@@ -28,4 +28,4 @@ function get_fib()
    echo $result
 }
 
-echo `get_fib $1`
+echo $(get_fib $1)
