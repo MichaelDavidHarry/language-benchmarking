@@ -1,6 +1,6 @@
 #!/bin/bash
 
-function get_fib()
+get_fib()
 {
     if [ $1 -eq 1 ] || [ $1 -eq 2 ]
     then
@@ -8,8 +8,8 @@ function get_fib()
         return
     fi
 
-   local f1=$(get_fib $(($1-2)))
-   local f2=$(get_fib $(($1-1)))
+   f1=$(get_fib $(($1-2)))
+   f2=$(get_fib $(($1-1)))
 
    echo $(($f1+$f2))
 }
