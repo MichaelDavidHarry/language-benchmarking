@@ -1,7 +1,7 @@
 #include <iostream>
 #include <sstream>
 
-unsigned long long getFib(int fibNumber)
+unsigned long long getFib(unsigned long long fibNumber)
 {
     if(fibNumber == 1 || fibNumber == 2)
     {
@@ -13,7 +13,7 @@ unsigned long long getFib(int fibNumber)
 int main(int argc, char* argv[])
 {
     std::istringstream iss (argv[1]);
-    int fibNumber;
+    unsigned long long fibNumber;
     iss >> fibNumber;
     std::cout << getFib(fibNumber) << std::endl;
 }
