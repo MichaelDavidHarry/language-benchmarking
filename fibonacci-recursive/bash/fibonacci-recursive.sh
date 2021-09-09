@@ -2,13 +2,7 @@
 
 function get_fib()
 {
-    if [ "$1" -eq 1 ]
-    then
-        echo 0
-        return
-    fi
-
-    if [ "$1" -eq 2 ]
+    if [ $1 -eq 1 ] || [ $1 -eq 2 ]
     then
         echo 1
         return

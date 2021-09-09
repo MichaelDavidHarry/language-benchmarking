@@ -3,9 +3,7 @@
 import sys
 
 def get_fib(fib_number):
-    if fib_number == 1:
-        return 0
-    if fib_number == 2:
+    if fib_number == 1 or fib_number == 2:
         return 1
     else:
         return get_fib(fib_number - 2) + get_fib(fib_number - 1)
