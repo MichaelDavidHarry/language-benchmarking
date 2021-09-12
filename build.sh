@@ -11,6 +11,11 @@ build_cpp()
     strip *.out
 }
 
+build_java()
+{
+    javac *.java
+}
+
 clean_dir_name()
 {
     dir=${1%*/}
@@ -28,6 +33,9 @@ do
         case "$implementation_dir" in
             c++)
               build_cpp "$algorithm_dir"
+              ;;
+            java)
+              build_java "$algorithm_dir"
               ;;
         esac
         popd > /dev/null

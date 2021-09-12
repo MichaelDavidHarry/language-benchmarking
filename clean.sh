@@ -18,6 +18,9 @@ do
             c++)
               rm -rf *.out
               ;;
+            java)
+              rm -rf *.class
+              ;;
         esac
         popd > /dev/null
     done
