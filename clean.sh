@@ -18,6 +18,9 @@ do
             c++)
               rm -rf *.out
               ;;
+            c#)
+              rm -rf bin obj
+              ;;
             java)
               rm -rf *.class
               ;;

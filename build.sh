@@ -11,6 +11,11 @@ build_cpp()
     strip *.out
 }
 
+build_csharp()
+{
+    dotnet publish -c Release --self-contained -r linux-x64
+}
+
 build_java()
 {
     javac *.java
@@ -33,6 +38,9 @@ do
         case "$implementation_dir" in
             c++)
               build_cpp "$algorithm_dir"
+              ;;
+            c#)
+              build_csharp "$algorithm_dir"
               ;;
             java)
               build_java "$algorithm_dir"
